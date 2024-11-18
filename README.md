@@ -20,3 +20,11 @@ A simple PHP CRUD (Create, Read, Update, Delete) application with MySQL database
 ## Database Setup
 
 Create a MySQL table with the following structure:
+CREATE TABLE IF NOT EXISTS `crud` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `name` varchar(100) NOT NULL,
+    `email` varchar(100) NOT NULL,
+    `mobile` varchar(20) NOT NULL,
+    `password` varchar(255) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
